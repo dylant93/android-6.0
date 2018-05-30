@@ -12,7 +12,7 @@ properties([
 ])
 */
 
-node('docker && android-build') {
+node {
   timestamps {
     wrap([$class: 'AnsiColorBuildWrapper', colorMapName: 'xterm']) {
       stage "Environment"
