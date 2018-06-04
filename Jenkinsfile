@@ -105,8 +105,8 @@ node {
 
                 source build/envsetup.sh
                 lunch "${TARGET}"
-                #make -j$(($(nproc)+1))
-                make
+                make -j$(($(nproc)+1))
+                
               '''
             }
           }
@@ -150,8 +150,8 @@ node {
 
                 source build/envsetup.sh
                 lunch "${TARGET}"
-                #make -j$(($(nproc)+1))
-                make
+                make -j$(($(nproc)+1))
+                
               '''
             }
           }
